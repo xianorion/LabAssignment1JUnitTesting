@@ -2,7 +2,6 @@ package date;
 
 import static org.junit.Assert.*;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class DateTests {
@@ -12,7 +11,7 @@ public class DateTests {
 		Date d1= new Date(2009 , 12, 25);
 		Date d2= new Date(2009, 12 ,28);
 		
-		assertEquals(3, d1.daysTo(d2));
+		assertEquals("Should display 3 for dates 3 days apart", 5, d1.daysTo(d2));
 	}
 	
 	
@@ -21,7 +20,7 @@ public class DateTests {
 		Date d1= new Date(2016 , 9, 28);
 		Date d2= new Date(2016, 10 ,3);
 		
-		assertEquals(5, d1.daysTo(d2));
+		assertEquals("Should display 5 for dates 5 days apart", 5, d1.daysTo(d2));
 	}
 	
 	@Test
@@ -29,7 +28,7 @@ public class DateTests {
 		Date d1 = new Date(2015, 2, 20);
 		Date d2 = new Date(2016, 3, 3);
 		
-		assertEquals(378, d1.daysTo(d2));
+		assertEquals("Should display 378 for dates 378 days apart",378, d1.daysTo(d2));
 	}
 	
 	@Test 
@@ -37,7 +36,7 @@ public class DateTests {
 		Date d1 =  new Date(2010 , 4, 30);
 		Date d2 = new Date(2012 , 4 ,30);
 		
-		assertEquals(730, d1.daysTo(d2));
+		assertEquals("Should display 730 for dates 730 days apart",730, d1.daysTo(d2));
 		
 	}
 	
@@ -46,7 +45,7 @@ public class DateTests {
 		Date d1 = new Date(2011, 8, 12);
 		Date d2 = new Date(2010, 6, 6);
 		
-		assertEquals(431, d1.daysTo(d2));
+		assertEquals("Should display 431 for dates 431 days apart",431, d1.daysTo(d2));
 	}
 	
 	@Test
@@ -54,7 +53,7 @@ public class DateTests {
 		Date d1 = new Date(2016, 10,25);
 		Date d2 =  new Date(2016, 10,25);
 		
-		assertEquals(0 , d1.daysTo(d2));
+		assertEquals("Should display 0 for same date", 0 , d1.daysTo(d2));
 	}
 	
 
