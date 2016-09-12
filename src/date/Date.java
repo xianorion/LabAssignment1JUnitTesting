@@ -1,6 +1,6 @@
 package date;
 import java.util.*;
-import java.lang.*;
+import static java.lang.Math.*;
 
 public class Date {
 	private int year;
@@ -24,13 +24,5 @@ public class Date {
 		
 		return daysApart;
 	}
-
-	private int abs(int i) {
-		if (i <0 )
-			return ((-1)*i);
-		else
-			return i;
-	}
-	
 	
 }
